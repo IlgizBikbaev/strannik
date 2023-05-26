@@ -102,7 +102,7 @@
         </div>
     </div>
 
-    <div class="trends">
+    <section class="trends">
         <h2 class="section-header">Сейчас в тренде</h2>
         <div class="trends-container">
             <article class="news trend-one">
@@ -117,9 +117,9 @@
                             </li>
                         </ul>
                     </nav>
-                    <h2 class="trend-title">
+                    <h3 class="trend-title">
                         <a href="#0" class="trend-link">Сейчас в тренде: Сад на подоконнике</a>
-                    </h2>
+                    </h3>
                 </div>
             </article>
             <article class="news trend-two">
@@ -131,9 +131,9 @@
                             </li>
                         </ul>
                     </nav>
-                    <h2 class="trend-title"><a href="#0" class="trend-link">Сыры на красивых картинках из интернета:
+                    <h3 class="trend-title"><a href="#0" class="trend-link">Сыры на красивых картинках из интернета:
                             Какие
-                            они на вкус?</a></h2>
+                            они на вкус?</a></h3>
                 </div>
             </article>
             <article class="news trend-three">
@@ -148,9 +148,9 @@
                             </li>
                         </ul>
                     </nav>
-                    <h2 class="trend-title">
+                    <h3 class="trend-title">
                         <a href="#0" class="trend-link">Собираемся в первый поход в горы</a>
-                    </h2>
+                    </h3>
                 </div>
             </article>
             <article class="news trend-four">
@@ -165,12 +165,12 @@
                             </li>
                         </ul>
                     </nav>
-                    <h2 class="trend-title"><a href="#0" class="trend-link">Сейчас в тренде: Сколько витамина C в
-                            лимонах?</a></h2>
+                    <h3 class="trend-title"><a href="#0" class="trend-link">Сейчас в тренде: Сколько витамина C в
+                            лимонах?</a></h3>
                 </div>
             </article>
         </div>
-    </div>
+    </section>
 
 
     <div class="last-posts">
@@ -445,7 +445,11 @@
         <h2 class="section-header">Наши изделия</h2>
         <div class="products">
             <article class="products-shop">
-                <img src="images/shop-item-desk1.jpg" alt="Подушка" class="products-img">
+                <picture class="product-picture">
+                    <source srcset="images/shop-item-tablet1.jpg" media="((min-width: 641px) and (max-width: 1200px))">
+                    <source srcset="images/shop-item-mobile1.jpg" media="(max-width: 640px)">
+                    <img src="images/shop-item-desk1.jpg" alt="Подушка" class="product-img">
+                </picture>
                 <div class="shop-item">
                     <div class="shop-header">
                         <h2 class="products-header">Подушки на диван</h2>
@@ -466,7 +470,11 @@
             </article>
 
             <article class="products-shop">
-                <img src="images/shop-item-desk2.jpg" alt="Зайчик" class="products-img">
+                <picture class="product-picture">
+                    <source srcset="images/shop-item-tablet2.jpg" media="((min-width: 641px) and (max-width: 1200px))">
+                    <source srcset="images/shop-item-mobile2.jpg" media="(max-width: 640px)">
+                    <img src="images/shop-item-desk2.jpg" alt="Зайчик" class="product-img">
+                </picture>
                 <div class="shop-item">
                     <div class="shop-header">
                         <h2 class="products-header">Кукла &#171Зайчик&#187</h2>
@@ -486,7 +494,11 @@
             </article>
 
             <article class="products-shop">
-                <img src="images/shop-item-desk3.jpg" alt="Рамка" class="products-img">
+              <picture class="product-picture">
+                <source srcset="images/shop-item-tablet3.jpg" media="((min-width: 641px) and (max-width: 1200px))">
+                <source srcset="images/shop-item-mobile3.jpg" media="(max-width: 640px)"> 
+                <img src="images/shop-item-desk3.jpg" alt="Рамка" class="product-img">
+              </picture>
                 <div class="shop-item">
                     <div class="shop-header">
                         <h2 class="products-header">Шестиугольная рамка</h2>
