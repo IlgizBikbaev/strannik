@@ -277,7 +277,6 @@
 
 .news {
     width: calc(25% - (15px / 4));
-    height: 320px;
     display: flex;
     align-items: flex-end;
     justify-content: space-between;
@@ -322,11 +321,11 @@
 }
 
 .trend {
+    width: 100%;
     padding: 30px;
-    margin: auto 20px 15px;
+    margin: 130px 20px 15px;
     border: 3px solid #b59f5b;
     z-index: 5;
-    flex-grow: 1;
 }
 
 .trend-title {
@@ -586,6 +585,10 @@ span {
     flex-wrap: nowrap;
 }
 
+.product-img {
+    width: 100%;
+}
+
 .products-shop {
     width: calc((100% / 3) - (132px / 3));
     display: flex;
@@ -598,6 +601,18 @@ span {
     font-size: 20px;
     font-weight: 700;
     text-transform: uppercase;
+}
+
+.shop-header {
+   margin-top: 25px;
+}
+
+ .last-post-img {
+    width: 100%;
+ }
+
+.product-img {
+    width: 100%;
 }
 
 .products-shop p {
@@ -771,6 +786,10 @@ footer {
         flex-wrap: wrap;
     }
 
+    .trend {
+      margin-top: 75px;
+    }
+
     .trend-title,
     .last-post-title,
     .products-header {
@@ -801,10 +820,6 @@ footer {
         justify-content: flex-start;
     }
 
-    .last-post-img {
-        width: 100%;
-    }
-
     .last-post-text {
         margin-left: 0;
         margin-top: 15px;
@@ -827,15 +842,23 @@ footer {
     }
 }
 
-@media (min-width: 641px) and (max-width: 1200px),
-(orientation: landscape) {
+@media (min-width: 641px) and (max-width: 1200px) and (orientation: landscape) {
     .news {
         width: calc(25% - (15px / 3));
     }
+
+     .news:nth-child(2) {
+        margin-left: 5px;
+        margin-right: 5px;
+    }
+
+    .news:nth-child(3) {
+        margin-right: 5px;
+    }
+
 }
 
-@media (min-width: 641px) and (max-width: 1200px),
-(orientation: portrait) {
+@media (min-width: 641px) and (max-width: 1200px) and (orientation: portrait) {
     .news {
         width: calc(50% - 2.5px);
     }
@@ -913,9 +936,6 @@ footer {
 
     .news {
         width: 100%;
-        margin-bottom: 5px;
-        margin-left: 0;
-        margin-right: 0;
     }
 
     .main {
@@ -963,12 +983,7 @@ footer {
         justify-content: flex-start;
     }
 
-    .last-post-img {
-        width: 100%;
-    }
-
-    @media (max-width: 640px),
-    (orientation: landscape) {
+    @media (max-width: 640px) and (orientation: landscape) {
         .news {
             width: calc(50% - 2.5px);
         }
@@ -984,8 +999,7 @@ footer {
         }
     }
 
-    @media (max-width: 640px),
-    (orientation: portrait) {
+    @media (max-width: 640px) and (orientation: portrait) {
         .news {
             width: 100%;
             margin-bottom: 5px;
