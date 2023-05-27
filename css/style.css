@@ -256,6 +256,7 @@
     padding: 0;
 }
 
+.trend-item,
 .last-post-item {
     font-size: 14px;
     font-weight: 700;
@@ -786,16 +787,19 @@ footer {
         flex-wrap: wrap;
     }
 
-    .trend {
-      margin-top: 75px;
-    }
+    
 
-    .trend-title,
     .last-post-title,
     .products-header {
         font-size: 17px;
         line-height: 1.3;
     }
+
+    .trend-title {
+      font-size: 12px;
+      line-height: 1.3;
+    }
+
 
     .last-posts {
         padding: 0 35px;
@@ -819,6 +823,12 @@ footer {
         flex-direction: column;
         justify-content: flex-start;
     }
+
+    .last-post-link {
+        margin-right: 5px;
+    }
+
+    
 
     .last-post-text {
         margin-left: 0;
@@ -854,6 +864,15 @@ footer {
 
     .news:nth-child(3) {
         margin-right: 5px;
+    }
+
+    .trend {
+       margin: 75px 1vw 1vw;
+       padding: 1vw;
+    }
+    
+    .trend-item {
+        font-size: 12px;
     }
 
 }
@@ -934,10 +953,6 @@ footer {
         flex-wrap: wrap;
     }
 
-    .news {
-        width: 100%;
-    }
-
     .main {
         width: 100%;
     }
@@ -997,6 +1012,15 @@ footer {
         .news:nth-child(1) {
             margin-bottom: 5px;
         }
+
+        .trend {
+            margin: 65px 2vw 2vw;
+            padding: 4vw 2.5vw;
+        }
+        
+         .last-post-link {
+             margin-right: 10px;
+        }
     }
 
     @media (max-width: 640px) and (orientation: portrait) {
@@ -1005,6 +1029,21 @@ footer {
             margin-bottom: 5px;
             margin-left: 0;
             margin-right: 0;
+        }
+
+        .news:nth-child(2) {
+           margin-left: 0;
+           margin-right: 0;
+        }
+
+        .news:nth-child(3) {
+            margin-left: 0;
+            margin-right: 0;
+        }
+
+        .trend {
+            margin: 65px 2.3vw 2.3vw;
+            padding: 4.5vw 3.1vw;
         }
     }
 }
